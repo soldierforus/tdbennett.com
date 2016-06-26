@@ -2372,7 +2372,7 @@
 			box-shadow: 0 0 0 1px #ffffff;
 		}
 
-	.select-wrapper {
+	.select- style2 {
 		text-decoration: none;
 		display: block;
 		position: relative;
@@ -2876,6 +2876,45 @@
 			margin-left: 2em;
 		}
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10001; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(49, 36, 80); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgb(49, 36, 80);
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -3213,7 +3252,19 @@
 			}
 
 /* Wrapper */
-
+	.videoWrapper {
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		padding-top: 25px;
+		height: 0;
+	}
+	.videoWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 	.wrapper {
 		position: relative;
 	}
@@ -3399,6 +3450,7 @@
 			-ms-flex: 1;
 			flex: 1;
 			text-align: right;
+			
 		}
 
 			#header > nav > ul {
@@ -3483,6 +3535,7 @@
 			#sidebar + #wrapper {
 				margin-left: 0;
 				padding-top: 3.5em;
+				
 			}
 
 		}

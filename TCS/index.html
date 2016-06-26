@@ -9,10 +9,13 @@
 		<title>Tucson Code School</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Inspiring youth to create web applications and software with code" />
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript,Code,School,free,teach,charter,non-profit,non profit,Tucson,learn,programming,software,web,development,tech,technology,web,design">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="image_src" src="images/TCSimage.png" />
 	</head>
 	<body>
 
@@ -30,6 +33,8 @@
 					</nav>
 				</div>
 			</section>
+
+
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -49,13 +54,11 @@
 							<div class="content">
 								<div class="inner">
 									<h2>About</h2>
-									<p>Tucson Code school was founded to provide free education to kids who are curious about coding.  There is an incredible void in public schools for one of the most important skills anyone can have.</p>  
-									<p>Coding will be as essential as reading in the next few decades.  We want to teach the importance of coding as well as the best practices early so the next generation can take control of their future.</p>  
-									<p>TCS is for kids aged 12 and up.  We are currently awaiting approval from the Pima County Public Libraries for a meeting room at Eckstrom-Columbus Library.  Tentative class schedule will be every Friday from 3:00pm - 4:00pm beginning March 4th.</p>
-									<h3>Founder</h3>
-									<p>Hello, my name is Travis Bennett, and I'm the creator of Tucson Code School.  I started coding when I was around 12, but struggled trying to teach myself at such a young age.  Although I would eventually move away from coding, it remained an affectionate part of my life.  I decided to get back into coding about a year ago, and since I believe teaching is as important as learning, I am passing along the lessons I've learned.</p>
+									<p>Hello, my name is <a href="http://tdbennett.com">Travis Bennett</a>, and I created Tucson Code School to provide free education to kids curious about coding.  I started coding when I was around 12, but struggled teaching myself at such a young age.  Eventually, I moved away from coding but I always regretted not pursuing this interest.  I decided to get back into coding a couple years ago and, since I believe teaching is as important as learning, I am passing along the lessons I've learned.
+									<br><br>There is an incredible void in public schools for such an important skill.  Coding will become as essential as reading in the coming years, and I want to teach these valuable skills to the next generation so they may take control of their future.
+									<br><br>At this time TCS is for kids aged 12-17. However, there are plans to expand the program to ages 8 and up.  The school is currently looking for a new location to provide services, if you can recommend a location, or have one, please <a href="#three">send a message below</a>.  If you like what TCS is doing, consider donating.  <strong>Your support not only keeps this program free to students, it also helps expand the program giving more kids the opportunity to learn computer programming at no cost!</strong>
 									<ul class="actions">
-										<li><a href="http://tdbennett.com" class="button">Learn more about Travis</a></li>
+										<li><button id="myBtn">Donate to Tucson Code School</button></li>
 									</ul>
 								</div>
 							</div>
@@ -65,8 +68,8 @@
 							<div class="content">
 								<div class="inner">
 									<h2>What is coding?</h2>
-									<P>You may have seen the craze for learning code. But what exactly is coding? Coding is what makes it possible for us to create computer software, apps and websites. Your browser, your Operating System, the apps on your phone, Facebook, and this website – they’re all made with code.  Coding is becoming an essential skill, just like reading, writing, and math. Learning to code can open up countless opportunities for anyone's future. </p>
-									<P><iframe width="640" height="360" src="https://www.youtube.com/embed/nPblG6ceqOs" frameborder="0" allowfullscreen></iframe></p>
+									<P>You may have seen the craze for learning code. But what exactly is coding? Coding is what makes it possible for us to create computer software, apps and websites. Your browser, Operating System, the apps on your phone, Facebook, and this website – they’re all made with code.  Coding is becoming an essential skill, just like reading, writing, and math. Learning to code can open countless opportunities for anyone's future. </p>
+									<P class = "videoWrapper"><iframe width="640" height="360" src="https://www.youtube.com/embed/nPblG6ceqOs" frameborder="0" allowfullscreen></iframe></p>
 								</div>
 							</div>
 						</section>
@@ -76,7 +79,7 @@
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Syllabus</h2>
-							<p>The main objective of this class is to have fun!  Students will have a chance to learn Computer Science subjects they are interested while helping to shape the syllabus for themselves and future students.  Here are some of the things I want to cover:</p>
+							<p>The main objective of this class is to have fun!  Students will have a chance to learn about Computer Science subjects which interest them while helping to shape the syllabus for themselves as well as future students.  Here are some of the things we will cover:</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
@@ -100,7 +103,7 @@
 								</section>
 								<section>
 									<span class="icon major fa-diamond"></span>
-									<h3>Team Capstone Project</h3>
+									<h3>Team Capstone Project - Build a website for a non-profit</h3>
 								</section>
 							</div>
 						</div>
@@ -113,7 +116,7 @@
 							<p>Do you have questions, comments, concerns, or want to know how you can help?  Fill out the form below and reach out.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post" action="http://formspree.io/TucsonCodeSchool@gmail.com">
 										<div class="field half first">
 											<label for="name">Name</label>
 											<input type="text" name="name" id="name" />
@@ -127,17 +130,24 @@
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<li><a href="http://formspree.io/TucsonCodeSchool@gmail.com" class="button submit">Send Message</a></li>
+											<!-- <li>
+												<a href=""  class="button submit">Enroll
+												</a>
+											</li> -->
+
 										</ul>
 									</form>
 								</section>
 								<section>
 									<ul class="contact">
 										<li>
-											<h3>Eckstrom-Columbus Library</h3>
-											<span>4350 E 22nd St<br />
-											Tucson, AZ 85711<br />
-											USA</span>
+											<h3>Address</h3>
+											 Pending
+										</li>
+										<li>
+											<h3>Days and Hours</h3>
+											 Pending
 										</li>
 										<li>
 											<h3>Email</h3>
@@ -152,7 +162,7 @@
 												<!--
 												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
 												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												-->											
+												-->
 											</ul>
 										</li>
 									</ul>
@@ -171,7 +181,25 @@
 					</ul>
 				</div>
 			</footer>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
 
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">x</span>
+	    <p><br><br>Thank you for donating to Tucson Code School.  Your donation ensures the school continues to be <strong>free</strong>.  Please click the the paypal link below and follow the directions</p>
+	    <p>
+	    	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="hosted_button_id" value="R9YHDK8C2SUD8">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+				</form>
+		<br>
+		<br>
+	  </div>
+
+	</div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -180,6 +208,14 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+			  ga('create', 'UA-74077223-1', 'auto');
+			  ga('send', 'pageview');
+			</script>
 	</body>
 </html>
