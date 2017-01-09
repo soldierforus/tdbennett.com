@@ -2,11 +2,10 @@ function songList() {
     var embed = "https://www.youtube.com/embed/"
     var songs = [
     "-lLvtydTM78",
-    "7PDUO3l8xiM", 
+    "7PDUO3l8xiM",
     "N6Cq8w9tOFo",
     "2bfgkTAW6IY",
-    "3JV74i4yvcA", 
-    "rbLg6-MvOFo",
+    "3JV74i4yvcA",
     "tQESZszV0Sg"
     ];
     var song = songs[Math.floor(Math.random() * songs.length)]
@@ -18,6 +17,5 @@ function onClick() {
     var date = new Date();
     if (date.getDate()  >= 14 && date.getMonth() >= 1 && date.getFullYear() >=2016)
         window.location.href = 'http://tdbennett.com/rose/rose.html';
-    else alert("You have to wait until Valentine's Day!");  
+    else alert("You have to wait until Valentine's Day!");
 }
-
