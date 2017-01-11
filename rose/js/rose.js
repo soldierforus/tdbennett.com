@@ -38,9 +38,72 @@ function setDate() {
   minHand.style.transform = `rotate(${minDegrees}deg)`;
 
   const hour = now.getHours();
-  const hourDegrees = ((mins/12) * 360) + 90;
+  const hourDegrees = ((hour/12) * 360) + ((min/60)*30) + 90;
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
 }
 
 setInterval(setDate, 1000);
+
+//Eng/Thai transition
+
+document.getElementById("calculator").addEventListener("mouseover", calcThai);
+document.getElementById("calculator").addEventListener("mouseout", calculator);
+document.getElementById("words").addEventListener("mouseover", wordsThai);
+document.getElementById("words").addEventListener("mouseout", words);
+document.getElementById("songs").addEventListener("mouseover", songsThai);
+document.getElementById("songs").addEventListener("mouseout", songs);
+document.getElementById("pictures").addEventListener("mouseover", picturesThai);
+document.getElementById("pictures").addEventListener("mouseout", pictures);
+document.getElementById("clock").addEventListener("mouseover", clockThai);
+document.getElementById("clock").addEventListener("mouseout", clock);
+document.getElementById("poem").addEventListener("mouseover", poemThai);
+document.getElementById("poem").addEventListener("mouseout", poem);
+
+function calculator() {
+    document.getElementById("calculator").innerHTML = "Calculator";
+}
+
+function calcThai() {
+    document.getElementById("calculator").innerHTML = "เครื่องคิดเลข";
+}
+
+function words() {
+    document.getElementById("words").innerHTML = "Words";
+}
+
+function wordsThai() {
+    document.getElementById("words").innerHTML = "คำ";
+}
+
+function songs() {
+    document.getElementById("songs").innerHTML = "Songs";
+}
+
+function songsThai() {
+    document.getElementById("songs").innerHTML = "เพลง";
+}
+
+function pictures() {
+    document.getElementById("pictures").innerHTML = "Pictures";
+}
+
+function picturesThai() {
+    document.getElementById("pictures").innerHTML = "ภาพ";
+}
+
+function clock() {
+    document.getElementById("clock").innerHTML = "Clock";
+}
+
+function clockThai() {
+    document.getElementById("clock").innerHTML = "นาฬิกา";
+}
+
+function poem() {
+    document.getElementById("poem").innerHTML = "Poem";
+}
+
+function poemThai() {
+    document.getElementById("poem").innerHTML = "บทกวี";
+}
