@@ -24,7 +24,7 @@
     <br><br><br><br><br><h1>Phom Ruk Khun</h1>
   </header>
   <body>
-    <div class="container">
+    <div class="container" id ="sec2">
       <div class="row">
         <div class="col-md-4">
           <a href="#0" id = "calculator">Calculator</a>
@@ -49,21 +49,28 @@
           <a href="#5" id="poem">Poem</a>
         </div>
     </body>
-      <div class="container" >
+      <div class="container">
         <div class="row">
-          <div class="col-md-12" id="0">
+          <div class="col-md-12" id="a">
             <h1>Calculator</h1>
+            <p>Type a value in the Pounds field to convert the value to Kilograms:</p>
+
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
           </div>
         </div>
       </div>
       <div class="container" >
         <div class="row">
-          <div class="col-md-12" id="1">
+          <div class="col-md-12" id="b">
             <h1>Words</h1>
           </div>
         </div>
       </div>
-      <div class="container" id="2">
+      <div class="container" id="c">
         <div class="row">
           <div class="col-md-12">
             <h1>Songs</h1>
@@ -71,14 +78,14 @@
           </div>
         </div>
       </div>
-      <div class="container" id="3">
+      <div class="container" id="d">
         <div class="row">
           <div class="col-md-12">
             <h1>Pictures</h1>
           </div>
         </div>
       </div>
-      <div class="container" id="4">
+      <div class="container" id="e">
         <div class="row">
           <h1>Clock</h1>
           <div class="col-md-6">
@@ -101,7 +108,7 @@
           </div>
         </div>
       </div>
-      <div class="container" id="5">
+      <div class="container" id="f">
         <div class="row">
           <div class="col-md-12">
             <h1>Poem</h1>

@@ -2,13 +2,13 @@
  * Sections
  */
 
-#0,
-#1,
-#2,
-#3,
-#4,
-#5,
-#6 {
+#a,
+#b,
+#c,
+#d,
+#e,
+#f,
+#g {
   min-height: 10em;
   max-height: 20em;
   background-color: white;
