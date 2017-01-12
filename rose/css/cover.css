@@ -9,21 +9,21 @@
 #e,
 #f,
 #g {
-  min-height: 10em;
-  max-height: 20em;
   background-color: white;
   border-color: blue;
   margin: 20px;
-  padding: 60px;
 }
 
+#a {
+  margin-top: 5em;
+}
 
 /* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
-  font-size: 80px;
+  font-size: 50px;
 }
 
 /* Custom default button */
@@ -83,6 +83,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     min-height: 15em;
+    margin-bottom: 10em;
 
 }
 /*
@@ -182,14 +183,12 @@ p {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;
+	height: inherit;
 }
 .videoWrapper iframe {
-	position: absolute;
+	position:relative;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
 }
 
 
