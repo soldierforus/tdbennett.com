@@ -183,12 +183,14 @@ p {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: inherit;
+  width:inherit;
+
 }
 .videoWrapper iframe {
-	position:relative;
+	position:inherit;
 	top: 0;
 	left: 0;
+  width:inherit;
 }
 
 
