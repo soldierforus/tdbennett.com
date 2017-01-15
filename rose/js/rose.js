@@ -71,7 +71,6 @@ function getTime() {
 
 
 //Change background based on am/pm
-  console.log(amThailand,amAZ);
     if (amThailand === "am") {
       $('.clock1').css('background-image', 'url(img/day.jpg)');
     } else {
