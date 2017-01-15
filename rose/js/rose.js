@@ -87,7 +87,7 @@ function getTime() {
 
 setInterval(getTime, 1000);
 
-//Eng/Thai transition
+//Eng/Thai translation - event listen mouseouver/mouseout
 
 document.getElementById("calculator").addEventListener("mouseover", calcThai);
 document.getElementById("calculator").addEventListener("mouseout", calculator);
