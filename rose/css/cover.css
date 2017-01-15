@@ -74,6 +74,18 @@ a:hover {
   transition-timing-function: cubic-bezier(.1,2.7,.58,1);
 }
 
+.hour-hand,
+.hour-hand2 {
+  height:6px;
+}
+.min-hand,
+.min-hand2 {
+  height:6px;
+}
+.second-hand,
+.second-hand2 {
+  height:2px;
+}
 
 /* Header*/
 header {

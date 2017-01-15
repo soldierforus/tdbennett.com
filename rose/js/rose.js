@@ -17,9 +17,9 @@ songList();
 /*Check Date*/
 function onClick() {
     var date = new Date();
-    if (date.getDate()  >= 14 && date.getMonth() >= 1 && date.getFullYear() >=2016)
-        window.location.href = 'http://tdbennett.com/rose/rose.html';
-    else alert("You have to wait until Valentine's Day!");
+    if (date.getDate() === 23 == true && date.getMonth() === 0 == true || date.getDate() === 14 == true && date.getMonth() === 1 == true) {
+        window.location.href = 'rose.html';
+    } else alert("You have to wait until Birthday or Valentines Day");
 }
 
 /* Clock*/
@@ -30,27 +30,63 @@ const secondHand2 = document.querySelector('.second-hand2');
 const minHand2 = document.querySelector('.min-hand2');
 const hourHand2 = document.querySelector('.hour-hand2');
 
-function setDate() {
-  const now = new Date()
-  const seconds = now.getSeconds();
-  const secondsDegrees = ((seconds/60) * 360) + 90;
-  secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
-  secondHand2.style.transform = `rotate(${secondsDegrees}deg)`;
 
-  const min = now.getMinutes();
-  const minDegrees = ((min/60) * 360) + 90;
-  minHand.style.transform = `rotate(${minDegrees}deg)`;
-  minHand2.style.transform = `rotate(${minDegrees}deg)`;
+function getTime() {
+  //load timezones to moment
+  moment.tz.add([
+    "America/Phoenix|MST MDT MWT|70 60 60|01010202010|-261r0 1nX0 11B0 1nX0 SgN0 4Al1 Ap0 1db0 SWqX 1cL0|42e5",
+    "Asia/Bangkok|BMT ICT|-6G.4 -70|01|-218SG.4|15e6"
+]);
+  const now = moment();
 
-  const hour = now.getHours();
-  const hourDegrees = ((hour/12) * 360) + ((min/60)*30) + 90;
-  hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-  hourHand2.style.transform = `rotate(${hourDegrees}deg)`;
+  //clock seconds for both clocks
+  const seconds1 = moment.tz('Asia/Bangkok').format('s');
+  const secondsDegrees1 = ((seconds1/60) * 360) + 90;
+  const seconds2 = moment.tz('America/Phoenix').format('s');
+  const secondsDegrees2 = ((seconds2/60) * 360) + 90;
+  secondHand.style.transform = `rotate(${secondsDegrees1}deg)`;
+  secondHand2.style.transform = `rotate(${secondsDegrees2}deg)`;
+//clock minutes for both clocks
+  const min1 = moment.tz('Asia/Bangkok').format('m');
+  const minDegrees1 = ((min1/60) * 360) + 90;
+  const min2 = moment.tz('America/Phoenix').format('m');
+  const minDegrees2 = ((min2/60) * 360) + 90;
+  minHand.style.transform = `rotate(${minDegrees1}deg)`;
+  minHand2.style.transform = `rotate(${minDegrees2}deg)`;
+//clock hours for both clocks
+  const hour1 = moment.tz('Asia/Bangkok').format('h');
+  const hourDegrees1 = ((hour1/12) * 360) + ((min1/60)*30) + 90;
+  const hour2 = moment.tz('America/Phoenix').format('h');
+  const hourDegrees2 = ((hour2/12) * 360) + ((min2/60)*30) + 90;
+  hourHand.style.transform = `rotate(${hourDegrees1}deg)`;
+  hourHand2.style.transform = `rotate(${hourDegrees2}deg)`;
 
-}
+//2400 label
+  document.getElementById("thai24").innerHTML = moment.tz('Asia/Bangkok').format('HH:mm');
+  document.getElementById("az24").innerHTML = moment.tz('America/Phoenix').format('HH:mm');
+
+//AM/PM
+  const amThailand = moment.tz('Asia/Bangkok').format('a');
+  const amAZ = moment.tz('America/Phoenix').format('a');
 
 
-setInterval(setDate, 1000);
+//Change background based on am/pm
+
+//   if (amThailand === "a" === true ) {
+//     document.getElementByClassName("clock1").background = "yellow";
+//   } else {
+//     document.getElementByClassName("clock1").background = "navy";
+//   }
+//   if (amAZ ==="a" === true) {
+//     document.getElementByClassName("clock2").background = "yellow";
+//   } else {
+//     document.getElementByClassName("clock2").background = "navy";
+//   }
+//
+// }
+
+
+setInterval(getTime, 1000);
 
 //Eng/Thai transition
 
