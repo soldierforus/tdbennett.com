@@ -62,8 +62,8 @@ function getTime() {
   hourHand2.style.transform = `rotate(${hourDegrees2}deg)`;
 
 //2400 label
-  document.getElementById("thai24").innerHTML = moment.tz('Asia/Bangkok').format('HH:mm');
-  document.getElementById("az24").innerHTML = moment.tz('America/Phoenix').format('HH:mm');
+  document.getElementById("thai24").innerHTML = moment.tz('Asia/Bangkok').format('D MMMM YYYY, H:mm:ss a')
+  document.getElementById("az24").innerHTML = moment.tz('America/Phoenix').format('MMMM Do, YYYY h:mm:ss a');
 
 //AM/PM
   const amThailand = moment.tz('Asia/Bangkok').format('a');
