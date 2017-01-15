@@ -71,19 +71,19 @@ function getTime() {
 
 
 //Change background based on am/pm
+  console.log(amThailand,amAZ);
+    if (amThailand === "am") {
+      $('.clock1').css('background-image', 'url(img/day.jpg)');
+    } else {
+      $('.clock1').css('background-image', 'url(img/night.jpg)');
+    }
 
-//   if (amThailand === "a" === true ) {
-//     document.getElementByClassName("clock1").background = "yellow";
-//   } else {
-//     document.getElementByClassName("clock1").background = "navy";
-//   }
-//   if (amAZ ==="a" === true) {
-//     document.getElementByClassName("clock2").background = "yellow";
-//   } else {
-//     document.getElementByClassName("clock2").background = "navy";
-//   }
-//
-// }
+    if (amAZ === "am") {
+      $('.clock2').css('background-image', 'url(img/day.jpg)');
+    } else {
+      $('.clock2').css('background-image', 'url(img/night.jpg)');
+    }
+  }
 
 
 setInterval(getTime, 1000);
