@@ -153,6 +153,52 @@ function poemThai() {
 
 //Metric/Standard Calculator
 
-function weightConverter(valNum) {
-  document.getElementById("output").innerHTML=valNum/2.2046;
+function kilogramsToPounds(value) {
+  document.getElementById("output").innerHTML=value*2.2046;
+}
+
+function poundsToKilograms(value) {
+  document.getElementById("output").innerHTML=value/2.2046;
+}
+
+function FahrenheitToCelcius(value) {
+  value = parseFloat(value);
+  document.getElementById("output").innerHTML=(value-32)/1.8;
+}
+
+function celsiusToFahrenheit(value) {
+  value = parseFloat(value);
+  document.getElementById("output").innerHTML=(value*1.8)+32;
+}
+
+function feetToMeters(value) {
+  document.getElementById("output").innerHTML=value/3.2808;
+}
+
+function metersToFeet(value) {
+  document.getElementById("output").innerHTML=value*3.2808;
+}
+
+function inchesToCM(value) {
+  document.getElementById("output").innerHTML=value/0.39370;
+}
+
+function cmToInches(value) {
+  document.getElementById("output").innerHTML=value*0.39370;
+}
+
+function kilometersToMiles(value) {
+  document.getElementById("output").innerHTML=value*0.62137;
+}
+
+function milesToKilometers(value) {
+  document.getElementById("output").innerHTML=value/0.62137;
+}
+
+function mphToKPH(value) {
+  document.getElementById("output").innerHTML=value*1.609344;
+}
+
+function kphToMPH(value) {
+  document.getElementById("output").innerHTML=value/1.609344;
 }

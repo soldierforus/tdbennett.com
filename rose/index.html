@@ -20,6 +20,7 @@
   <!-- Custom styles for this template -->
     <link href="css/cover.css" rel="stylesheet">
   </head>
+
   <header class="container-fluid">
     <br><br><br><br><br><h1>Phom Ruk Khun</h1>
   </header>
@@ -56,18 +57,15 @@
             <p>Type a value in the Pounds field to convert the value to Kilograms:</p>
             <p>
               <label>Convert</label>
-              <input id="inputPounds" type="number" placeholder="" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
-              <select>
-                <option value="pounds" class = "weight">Pounds</option>
-                <option value="kilograms" class = "weight">Kilograms</option>
-              </select><br>
-              <label>To</label>
-              <select>
-                <option value="kilograms" class = "weight">Kilograms</option>
-                <option value="pounds" class = "weight">Pounds</option>
-              </select>
-              <span id="output"></span></p><br>
-            </p>
+                <input id="inputPounds" type="number" placeholder="" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+                <select>
+                  <option value="pounds" class = "weight">Pounds</option>
+                  <option value="kilograms" class = "weight">Kilograms</option>
+                </select><br>
+                <label>To</label>
+                <select>
+                  <option value="kilograms" class = "weight">Kilograms</option>
+                  <option value="pounds" class = "weight">Pounds</option>
           </div>
         </div>
       </div>
@@ -132,13 +130,15 @@
       </div>
     </div>
   </div>
+</div>
+</div>
 
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../rose/js/rose.js"></script>
     <script src="../rose/js/moment.js"></script>
     <script src="../rose/js/moment-timezone.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../rose/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
