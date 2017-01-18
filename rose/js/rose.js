@@ -153,6 +153,7 @@ function poemThai() {
 
 //Metric/Standard Calculator
 
+
 function kilogramsToPounds(value) {
   document.getElementById("output").innerHTML=value*2.2046;
 }
@@ -201,4 +202,17 @@ function mphToKPH(value) {
 
 function kphToMPH(value) {
   document.getElementById("output").innerHTML=value/1.609344;
+}
+
+function validate() {
+  var value = document.getElementById("input").value
+  var selectType1 = document.getElementById("select1");
+  var selectType2 = document.getElementById("select2");
+  var selectedValue1 = selectType1.options[selectType1.selectedIndex].value;
+  var selectedValue2 = selectType2.options[selectType2.selectedIndex].value;
+
+  console.log(value);
+    if (selectedValue1 === "pounds" && selectedValue2 === "kilograms") {
+      poundsToKilograms(value);
+    }
 }
