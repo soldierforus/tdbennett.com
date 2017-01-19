@@ -151,8 +151,7 @@ function poemThai() {
 }
 
 
-//Metric/Standard Calculator
-
+//Metric/Standard Calculations
 
 function kilogramsToPounds(value) {
   document.getElementById("output").innerHTML=value*2.2046;
@@ -164,12 +163,12 @@ function poundsToKilograms(value) {
 
 function FahrenheitToCelcius(value) {
   value = parseFloat(value);
-  document.getElementById("output").innerHTML=(value-32)/1.8;
+  document.getElementById("output").innerHTML=(value-32)/1.8 + " degrees ";
 }
 
 function celsiusToFahrenheit(value) {
   value = parseFloat(value);
-  document.getElementById("output").innerHTML=(value*1.8)+32;
+  document.getElementById("output").innerHTML=(value*1.8)+32 + " degrees ";
 }
 
 function feetToMeters(value) {
@@ -204,6 +203,7 @@ function kphToMPH(value) {
   document.getElementById("output").innerHTML=value/1.609344;
 }
 
+//compare selector values and run calculation functions
 function validate() {
   var value = document.getElementById("input").value
   var selectType1 = document.getElementById("select1");
@@ -211,8 +211,32 @@ function validate() {
   var selectedValue1 = selectType1.options[selectType1.selectedIndex].value;
   var selectedValue2 = selectType2.options[selectType2.selectedIndex].value;
 
-  console.log(value);
-    if (selectedValue1 === "pounds" && selectedValue2 === "kilograms") {
+    if (selectType1.value.class != selectType1.value.class) {
+      alert("The classes selected do not match. Please select 2 weights, lengths, temperatures, or speeds");
+    }
+      else if (selectedValue1 === "pounds" && selectedValue2 === "kilograms") {
       poundsToKilograms(value);
+    } else if (selectedValue1 === "kilograms" && selectedValue2 === "pounds") {
+      kilogramsToPounds(value);
+    } else if (selectedValue1 === "fahrenheit" && selectedValue2 === "celsius") {
+      FahrenheitToCelcius(value);
+    } else if (selectedValue1 === "celsius" && selectedValue2 === "fahrenheit") {
+      celsiusToFahrenheit(value);
+    } else if (selectedValue1 === "feet" && selectedValue2 === "meters") {
+      feetToMeters(value);
+    } else if (selectedValue1 === "meters" && selectedValue2 === "feet") {
+      metersToFeet(value);
+    } else if (selectedValue1 === "inches" && selectedValue2 === "centimeters") {
+      inchesToCM(value);
+    } else if (selectedValue1 === "centimeters" && selectedValue2 === "inches") {
+      cmToInches(value);
+    } else if (selectedValue1 === "kilometers" && selectedValue2 === "miles") {
+      kilometersToMiles(value);
+    } else if (selectedValue1 === "miles" && selectedValue2 === "kilometers") {
+      milesToKilometers(value);
+    } else if (selectedValue1 === "MPH" && selectedValue2 === "KPH") {
+      mphToKPH(value);
+    } else if (selectedValue1 === "KPH" && selectedValue2 === "MPH") {
+      kphToMPH(value);
     }
 }
