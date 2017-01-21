@@ -19,11 +19,19 @@
 }
 
 /* Links */
+#words,
+#calculator,
+#songs,
+#pictures,
+#clock,
+#poem {
+  font-size: 50px
+}
+
 a,
 a:focus,
 a:hover {
   color: #fff;
-  font-size: 50px;
 }
 
 /* Custom default button */
@@ -35,6 +43,8 @@ a:hover {
   text-decoration: none;
   background-color: #FBC5D8;
   border: 1px solid #fff;
+  transform: none;
+  transition: none;
 
 }
 /*Clock*/
