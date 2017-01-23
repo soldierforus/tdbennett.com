@@ -1,11 +1,14 @@
 /*Dictionary*/
 
-function searchWord(word) {
-  var dictionary = jQuery.getJSON("/dictionary.json");
-  var word = document.getElementById('wordSearch').innerHTML
-  console.log(word);
-
+function searchWord() {
+  var word = document.getElementById('wordSearch').value
+  var definition = $.getJSON('js/dictionary.json', function(word) {
+   $('#defintion').html(word + ': ' + word.definition);
+});
 }
+
+
+
 /*Songs*/
 function songList() {
     var embed = "https://www.youtube.com/embed/"
