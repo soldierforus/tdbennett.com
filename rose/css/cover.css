@@ -103,7 +103,7 @@ a:hover {
 
 /* Header*/
 header {
-    /*background-image: url(../img/header.jpeg);*/
+
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -111,15 +111,17 @@ header {
     background-size: cover;
     -o-background-size: cover;
     min-height: 15em;
-    width: 100%
+    width: 100%;
     margin: 0 10em 10em 10em;
     background-color: white
-
-
 }
-/*
- * Base structure
- */
+
+#header2 {
+    background-image: url(../img/love.jpg);
+    width: 100%;
+    margin: 0em
+}
+/* Base structure*/
 
 html,
 body {
@@ -138,7 +140,6 @@ p {
   font-family: 'Yellowtail', cursive;
   font-size: 25px;
 }
-
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -170,13 +171,6 @@ p {
   padding: 30px;
 
 }
-
-
-/*
- * Header
- */
-
-
 
 .masthead-brand {
   margin-top: 10px;
@@ -213,7 +207,7 @@ p {
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	/*padding-bottom: 56.25%; /* 16:9 */*/
 	padding-top: 25px;
   width:inherit;
 
