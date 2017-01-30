@@ -14,7 +14,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -288,6 +288,7 @@
     </div>
   </div>
 </div>
+
 <!--Contact section
     <section id="contact">
         <div class="container">
@@ -316,7 +317,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Thank you for visiting</h1><br><br><br><br><br><br><br>
+                    <h1>Thank you for visiting</h1><br>
+                    <div class="elevator-button page-scroll btn btn-xl">Back to Top</div><br><br><br><br><br><br>
                     <span class="copyright"><br><br>&copy;2014 TDBennett.com </span>
                 </div>
             </div>
@@ -352,5 +354,19 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
+    <!-- Elevator-->
+    <script src="js/elevator.js"></script>
+
+    <script>
+    // Elevator script included on the page, already.
+
+    window.onload = function() {
+      var elevator = new Elevator({
+        element: document.querySelector('.elevator-button'),
+        mainAudio: 'music/elevator.mp3', //Tommy Dorsey & Orchestra -Tea For Two Cha Cha (instrumental)  http://www.thedailymp3.co/download-tea-for-two-mp3.html
+        endAudio: 'music/ding.mp3'
+      });
+    }
+    </script>
 </body>
 </html>
