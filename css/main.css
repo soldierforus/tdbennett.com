@@ -671,13 +671,14 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#contact .section-heading {
     color: #fff;
+    font-family: 'Trirong', serif;
+
 }
 
 section#contact .form-group {
@@ -735,7 +736,7 @@ section#contact .text-danger {
 }
 
 footer {
-    margin-top: 50em;
+    margin-top: 5em;
     padding: 25px 0;
     text-align: center;
 }

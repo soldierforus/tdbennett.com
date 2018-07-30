@@ -24,3 +24,10 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+//Javascript for display current year
+
+function currentYear() {
+  document.getElementById("currentYear").innerHTML = (new Date().getFullYear())
+}
+currentYear()
