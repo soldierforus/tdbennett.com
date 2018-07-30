@@ -2,7 +2,7 @@
  * Elevator.js
  *
  * MIT licensed
- * Copyright (C) 2015 Tim Holman, http://tholman.com
+ * Copyright (C) 2015 Tim Holman, https://tholman.com
  */
 
 /*********************************************
@@ -38,7 +38,7 @@ var Elevator = function(options) {
      * Utils
      */
 
-    // Thanks Mr Penner - http://robertpenner.com/easing/
+    // Thanks Mr Penner - https://robertpenner.com/easing/
     function easeInOutQuad( t, b, c, d ) {
         t /= d / 2;
         if ( t < 1 ) return c / 2 * t * t + b;
