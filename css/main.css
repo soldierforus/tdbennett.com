@@ -3,7 +3,7 @@ text-shadow: 1px 1px 2px black, 0 0 1em #F7D963, 0 0 0.2em #fff;
 }
 
 #arrow {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 
 
@@ -339,7 +339,7 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 2em;
     font-size: 40px;
 }
 
@@ -736,9 +736,9 @@ section#contact .text-danger {
 }
 
 footer {
-    margin-top: 5em;
     padding: 25px 0;
     text-align: center;
+    background-color: #F7D963;
 }
 
 footer span.copyright {
